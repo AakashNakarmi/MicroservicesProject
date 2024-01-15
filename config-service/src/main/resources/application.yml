@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          username: microservice
+          password: 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
+          uri: https://github.com/AakashNakarmi/ProjectConfiguration
+
+server:
+  port: 8888
+
