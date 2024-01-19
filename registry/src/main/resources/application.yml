@@ -1,15 +1,17 @@
 server:
   port: 8761
+
 spring:
   application:
     name: registry
-
+#  cloud:
+#    config:
+#      uri:
+#      - http://localhost:8888
 
 eureka:
   instance:
-    prefer-ip-address: true
+    hostname: localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    server:
-      waitTimeInMsWhenSyncEmpty: 0
+    register-with-eureka: false
+    fetch-registry: false

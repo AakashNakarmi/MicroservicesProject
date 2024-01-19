@@ -1,5 +1,9 @@
 spring:
   application:
-    name: STATISTICS-SERVICE
-  config:
-    import: configserver:http://localhost:8888
+    name: statistics-service
+  cloud:
+    config:
+      uri:
+        - "http://localhost:8888"
+server:
+  port: 7000
